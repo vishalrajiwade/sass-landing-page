@@ -268,3 +268,99 @@ body {
 
     }
 }
+
+
+@media only screen and (max-width: 500px) {
+    .header__list {
+        display: none ;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+    
+        &__left {
+    
+            margin-bottom: 2rem;
+            
+            &-heading {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1;
+                width: 100%;
+            }
+    
+            &-text {
+                margin-top: 1rem;
+                font-size: .7rem;
+                width: 80%;
+                line-height: 1.6;
+                color: #dee2e6;
+            }
+        }
+    
+    
+        &__right {
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+    
+    
+            &-img {
+                width: 100%;
+            }
+        }
+    
+    }
+
+
+    .features {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem 5vw;
+    
+        &__left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            &-img {
+                height: 25rem;
+            }
+        }
+    
+        &__right {
+    
+            margin-top: 3rem;
+    
+            &-heading {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 3rem;
+            }
+    
+            &-box {
+                display: flex;
+                justify-content: flex-start;
+                gap: 1rem;
+                align-items: flex-start;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+
+
+    .product {
+        margin: 4rem 5vw;
+    
+        &__cards {
+            flex-direction: column;
+            gap: 2rem;
+    
+        }
+    }
+}
